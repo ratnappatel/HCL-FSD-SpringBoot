@@ -8,21 +8,11 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import com.boot.pojo.User;
 
 @SpringBootApplication // == Configuration, EnableWeb, componentScan, propertySource
-//@EnableWebMvc
-public class Application implements CommandLineRunner{
+public class Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
 
-	@Override
-	public void run(String... args) throws Exception {
-		User user=new User(101,"Ratna");
-		System.out.println(user);
-		user.setId(99);
-		user.setName("Uttam");
-		System.out.println(user);
-		
-	}
-
+	
 }
