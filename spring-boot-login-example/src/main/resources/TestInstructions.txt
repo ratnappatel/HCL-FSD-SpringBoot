@@ -1,0 +1,35 @@
+URL to Signup 
+
+method: POST
+URL: http://localhost:8200/api/auth/signup
+
+Request-Body
+
+{
+    "username":"Ratna",
+    "password":"Ratna@123",
+    "email":"Ratna@gmail.com",
+    "role":[ "ROLE_USER"]
+}
+
+URL to SignIn
+method: POST
+URL: http://localhost:8200/api/auth/signin
+
+Request-Body
+
+{
+    "username":"Ratna",
+    "password":"Ratna@123",
+    
+}
+
+
+URL to test USER signin accessibility
+method: GET
+url: http://localhost:8200/api/test/user
+
+
+URL to test ADMIN signin accessibility
+method: GET
+url: http://localhost:8200/api/test/admin
